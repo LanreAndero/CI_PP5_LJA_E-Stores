@@ -1,0 +1,314 @@
+[
+    {
+       "pk":1,
+       "model":"products.product",
+       "fields":{
+          "brand":"Apple",
+          "name":"AirPods (2nd generation)",
+          "description":"Brand New, AirPods with Lightning Charging Case, more than 24 hours of listening time & up to 18 hours of talk time.",
+          "price":149.00,
+          "category":1,
+          "rating":4.6,
+          "image":"media/airpod2ndg-1.jpg"
+       }
+    },
+    {
+       "pk":2,
+       "model":"products.product",
+       "fields":{
+          "brand":"Apple",
+          "name":"AirPods (3rd generation)",
+          "description":"Brand New, AirPods with Lightning Charging Case, up to 6 hours of listening time with a single charge, up to 30 hours of listening time with charging case, sweat and water resistant.",
+          "price":199.00,
+          "category":1,
+          "rating":4.7,
+          "image":"media/airpod3rdg-1.jpg"
+       }
+    },
+    {
+       "pk":3,
+       "model":"products.product",
+       "fields":{
+          "brand":"Apple",
+          "name":"AirPods Pro (1st generation)",
+          "description":"Brand New, AirPods with Lightning Charging Case, up to 4.5 hours of listening time with a single charge, quick charge gives you 1 hour of battery from just 5 minutes charging, a simple 'Hey Siri' summons your voice assistant without lifting a finger - control your music, calls, volume, and more Audio Sharing lets you share a song, podcast or other audio between 2 sets of AirPods.",
+          "price":229.00,
+          "category":1,
+          "rating":4.6,
+          "image":"media/airpodpro1stg-1.jpg"
+       }
+    },
+    {
+       "pk":4,
+       "model":"products.product",
+       "fields":{
+          "brand":"Apple",
+          "name":"AirPods Pro (2nd generation)",
+          "description":"Brand New, AirPods with MagSafe Charging Case, speaker and lanyard loopu Up to 6 hours of listening time with a single charge up to 5.5 hours with Spatial Audio and head tracking enabled and up to 4.5 hours of talk time with a single charge, Active Noise Cancellation and adaptive transparency, Personalized Spatial Audio with dynamic head tracking.",
+          "price":279.00,
+          "category":1,
+          "rating":4.9,
+          "image":"media/airpodpro2ndg-1.jpg"
+       }
+    },
+    {
+       "pk":5,
+       "model":"products.product",
+       "fields":{
+          "brand":"Apple",
+          "name":"iPad 9th generation 10.2 inch 64GB Wi-Fi",
+          "description":"Brand New, 10.2 inch Retina display sRGB colour, A13 Bionic chip, 12MP Ultra Wide front camera, 8MP Wide camera 1080p video, Touch ID in Home button, Lightning connector.",
+          "price":349.00,
+          "category":2,
+          "rating":4.8,
+          "image":"media/ipad9thg64gbwf-1.jpg"
+       }
+    },
+    {
+       "pk":6,
+       "model":"products.product",
+       "fields":{
+          "brand":"Apple",
+          "name":"iPhone 15 128GB",
+          "description":"Brand New, SIM Free - Unlocked.",
+          "price":849.00,
+          "category":3,
+          "rating":4.7,
+          "image":"media/ip15128gb-1.jpg"
+       }
+    },
+    {
+       "pk":7,
+       "model":"products.product",
+       "fields":{
+          "brand":"Apple",
+          "name":"iPhone 15 Plus 128GB",
+          "description":"Brand New, SIM Free - Unlocked.",
+          "price":1049.00,
+          "category":3,
+          "rating":4.9,
+          "image":"media/ip15plus128gb-1.jpg"
+       }
+    },
+    {
+       "pk":8,
+       "model":"products.product",
+       "fields":{
+          "brand":"Apple",
+          "name":"iPhone 15 Pro 128GB",
+          "description":"Brand New, SIM Free - Unlocked.",
+          "price":1149.00,
+          "category":3,
+          "rating":4.8,
+          "image":"media/ip15pro128gb-1.jpg"
+       }
+    },
+    {
+       "pk":9,
+       "model":"products.product",
+       "fields":{
+          "brand":"Apple",
+          "name":"iPhone 15 Pro 256GB",
+          "description":"Brand New, SIM Free - Unlocked.",
+          "price":1249.00,
+          "category":3,
+          "rating":4.3,
+          "image":"media/ip15pro256gb-1.jpg"
+       }
+    },
+    {
+       "pk":10,
+       "model":"products.product",
+       "fields":{
+          "brand":"Apple",
+          "name":"iPhone 15 Pro Max 256GB",
+          "description":"Brand New, SIM Free - Unlocked.",
+          "price":1349.00,
+          "category":3,
+          "rating":4.3,
+          "image":"media/ip15promax256gb-1.jpg"
+       }
+    },
+    {
+       "pk":11,
+       "model":"products.product",
+       "fields":{
+          "brand":"Apple",
+          "name":"iPhone 15 Pro Max 512GB",
+          "description":"Brand New, SIM Free - Unlocked.",
+          "price":1499.00,
+          "category":3,
+          "rating":4.9,
+          "image":"media/ip15promax512gb-1.jpg"
+       }
+    },
+    {
+       "pk":12,
+       "model":"products.product",
+       "fields":{
+          "brand":"Apple",
+          "name":"iPhone 15 Pro 1TB",
+          "description":"Brand New, SIM Free - Unlocked.",
+          "price":62.99,
+          "category":3,
+          "rating":4.9,
+          "image":"media/ip15pro1tb-1.jpg"
+       }
+    },
+    {
+       "pk":13,
+       "model":"products.product",
+       "fields":{
+          "brand":"Samsung",
+          "name":"Galaxy Buds2",
+          "description":"Brand New, Bluetooth v5.2, Usage Time 5 Hours, Talk Time/Voice Call 3.5 Hours, Dynamic 2-way speakers for rich and balanced sound, 3 mic system with maximum call quality and noise reductionActive Noise Cancellation for immersive sound experience with up to 98% active noise reduction Customisable fit and lighter design for 24/7 lifestyle comfort, Smooth syncing across Galaxy devices with Auto Switching and Watch Control.",
+          "price":99.00,
+          "category":4,
+          "rating":4.8,
+          "image":"media/sgbud2-1.jpg"
+       }
+    },
+    {
+       "pk":14,
+       "model":"products.product",
+       "fields":{
+          "brand":"Samsung",
+          "name":"Galaxy Buds2 Pro",
+          "description":"Brand New, Bluetooth v5.3, Playtime Up to 5hours (ANC on), Playtime Up to 8hours (ANC off),Up to 8hours (ANC off), Up to 8hours (ANC off), Sound quality 24-bit Hi-Fi 2-way speaker, ANC + 3 High SNR Microphones, Ambient sound, Voice Detect, 360 audio + Support direct Multi-channel, Water Resistance IPX7, SmartThings Find + With/without case, Auto switch, Bixby Voice Wake-up.",
+          "price":149.00,
+          "category":4,
+          "rating":4.9,
+          "image":"media/sgbud2pro-1.jpg"
+       }
+    },
+    {
+       "pk":15,
+       "model":"products.product",
+       "fields":{
+          "brand":"Samsung",
+          "name":"Galaxy Tab A8 X200 10.5 inch 32GB Wi-Fi",
+          "description":"Brand New, 10.5 inch Display, Octa-core 2GHz, 32GB 3GB RAM, MicroSD (Up to 1TB), Main Camera 8 MP, Selfie Camera 5 MP, Wi-Fi 802.11 a/b/g/n/ac 2.4G+5GHz, VHT80, Bluetooth 5.0, USB 2.0, Battery 7040mAh.",
+          "price":199.00,
+          "category":5,
+          "rating":4.7,
+          "image":"media/sgtaba8x20032gbwf-1.jpg"
+       }
+    },
+    {
+       "pk":16,
+       "model":"products.product",
+       "fields":{
+          "brand":"Samsung",
+          "name":"Galaxy Tab A9 X110 8.7 inch 64GB Wi-Fi",
+          "description":"Brand New, 8.7 inch Display, Octa-core (2x2.2 GHz Cortex-A76 & 6x2.0 GHz Cortex-A55)32GB 3GB RAM, Main Camera 8 MP, Selfie Camera 5 MP, Wi-Fi 802.11 a/b/g/n/ac, dual-band, Wi-Fi Direct, Bluetooth 5.3, USB type-C 2.0, Battery 5100mAh.",
+          "price":169.00,
+          "category":5,
+          "rating":4.8,
+          "image":"media/sgtaba9x11064gbwf-1.jpg"
+       }
+    },
+    {
+       "pk":17,
+       "model":"products.product",
+       "fields":{
+          "brand":"Samsung",
+          "name":"Samsung Galaxy S23 (5G) 256GB 8GB Dual SIM",
+          "description":"Brand New, SIM Free - Unlocked.",
+          "price":849.00,
+          "category":6,
+          "rating":4.6,
+          "image":"media/sg235g256gb8gbds-1.jpg"
+       }
+    },
+    {
+       "pk":18,
+       "model":"products.product",
+       "fields":{
+          "brand":"Samsung",
+          "name":"Samsung Galaxy S22 Ultra (5G) 256GB 12GB Dual SIM",
+          "description":"Brand New, SIM Free - Unlocked.",
+          "price":949.00,
+          "category":6,
+          "rating":4.9,
+          "image":"media/sg22ul5g256gb12gb-1.jpg"
+       }
+    },
+    {
+       "pk":19,
+       "model":"products.product",
+       "fields":{
+          "brand":"Samsung",
+          "name":"Samsung Galaxy Z Fold4 512GB 12GB",
+          "description":"Brand New, SIM Free - Unlocked.",
+          "price":1099.00,
+          "category":6,
+          "rating":4.8,
+          "image":"media/sgzf5g512gb12gbds-1.jpg"
+       }
+    },
+    {
+       "pk":20,
+       "model":"products.product",
+       "fields":{
+          "brand":"Samsung",
+          "name":"Samsung Galaxy S23 Ultra (5G) 256GB 8GB Dual SIM",
+          "description":"Brand New, SIM Free - Unlocked.",
+          "price":1149.00,
+          "category":6,
+          "rating":4.9,
+          "image":"media/sg23ul5g256gb8gbds-1.jpg"
+       }
+    },
+    {
+       "pk":21,
+       "model":"products.product",
+       "fields":{
+          "brand":"Samsung",
+          "name":"Samsung Galaxy S23 Ultra (5G) 512GB 12GB Dual SIM",
+          "description":"Brand New, SIM Free - Unlocked.",
+          "price":1199.00,
+          "category":6,
+          "rating":4.8,
+          "image":"media/sg23ul5g512gb12gbds-1.jpg"
+       }
+    },
+    {
+       "pk":22,
+       "model":"products.product",
+       "fields":{
+          "brand":"Accessories",
+          "name":"iPhone USB-C Fast Power Adapter",
+          "description":"Brand New, Fast Charger.",
+          "price":20.00,
+          "category":7,
+          "rating":4.6,
+          "image":"media/usbtpyecpa-1.jpg"
+       }
+    },
+    {
+       "pk":23,
+       "model":"products.product",
+       "fields":{
+          "brand":"Accessories",
+          "name":"Hoco J96 Mini Power Bank 5000mAh",
+          "description":"Brand New, Fast Charger.",
+          "price":19.00,
+          "category":8,
+          "rating":4.5,
+          "image":"media/h6931474781338-1.jpg"
+       }
+    },
+    {
+       "pk":24,
+       "model":"products.product",
+       "fields":{
+          "brand":"Accessories",
+          "name":"L01 3in1 Handheld Extendable Bluetooth Selfie Stick Tripod",
+          "description":"Handheld Extendable Bluetooth Selfie Stick Tripod.",
+          "price":15.00,
+          "category":9,
+          "rating":4.5,
+          "image":"media/bltripl01blk-1.jpg"
+       }
+    }
+]
