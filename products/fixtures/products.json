@@ -9,7 +9,7 @@
           "price":149.00,
           "category":1,
           "rating":4.6,
-          "image":"media/airpod2ndg-1.jpg"
+          "image":"airpod2ndg-1.jpg"
        }
     },
     {
@@ -22,7 +22,7 @@
           "price":199.00,
           "category":1,
           "rating":4.7,
-          "image":"media/airpod3rdg-1.jpg"
+          "image":"airpod3rdg-1.jpg"
        }
     },
     {
@@ -35,7 +35,7 @@
           "price":229.00,
           "category":1,
           "rating":4.6,
-          "image":"media/airpodpro1stg-1.jpg"
+          "image":"airpodpro1stg-1.jpg"
        }
     },
     {
@@ -48,7 +48,7 @@
           "price":279.00,
           "category":1,
           "rating":4.9,
-          "image":"media/airpodpro2ndg-1.jpg"
+          "image":"airpodpro2ndg-1.jpg"
        }
     },
     {
@@ -61,7 +61,7 @@
           "price":349.00,
           "category":2,
           "rating":4.8,
-          "image":"media/ipad9thg64gbwf-1.jpg"
+          "image":"ipad9thg64gbwf-1.jpg"
        }
     },
     {
@@ -74,7 +74,7 @@
           "price":849.00,
           "category":3,
           "rating":4.7,
-          "image":"media/ip15128gb-1.jpg"
+          "image":"ip15128gb-1.jpg"
        }
     },
     {
@@ -87,7 +87,7 @@
           "price":1049.00,
           "category":3,
           "rating":4.9,
-          "image":"media/ip15plus128gb-1.jpg"
+          "image":"ip15plus128gb-1.jpg"
        }
     },
     {
@@ -100,7 +100,7 @@
           "price":1149.00,
           "category":3,
           "rating":4.8,
-          "image":"media/ip15pro128gb-1.jpg"
+          "image":"ip15pro128gb-1.jpg"
        }
     },
     {
@@ -113,7 +113,7 @@
           "price":1249.00,
           "category":3,
           "rating":4.3,
-          "image":"media/ip15pro256gb-1.jpg"
+          "image":"ip15pro256gb-1.jpg"
        }
     },
     {
@@ -126,7 +126,7 @@
           "price":1349.00,
           "category":3,
           "rating":4.3,
-          "image":"media/ip15promax256gb-1.jpg"
+          "image":"ip15promax256gb-1.jpg"
        }
     },
     {
@@ -139,7 +139,7 @@
           "price":1499.00,
           "category":3,
           "rating":4.9,
-          "image":"media/ip15promax512gb-1.jpg"
+          "image":"ip15promax512gb-1.jpg"
        }
     },
     {
@@ -152,7 +152,7 @@
           "price":62.99,
           "category":3,
           "rating":4.9,
-          "image":"media/ip15pro1tb-1.jpg"
+          "image":"ip15pro1tb-1.jpg"
        }
     },
     {
@@ -165,7 +165,7 @@
           "price":99.00,
           "category":4,
           "rating":4.8,
-          "image":"media/sgbud2-1.jpg"
+          "image":"sgbud2-1.jpg"
        }
     },
     {
@@ -178,7 +178,7 @@
           "price":149.00,
           "category":4,
           "rating":4.9,
-          "image":"media/sgbud2pro-1.jpg"
+          "image":"sgbud2pro-1.jpg"
        }
     },
     {
@@ -191,7 +191,7 @@
           "price":199.00,
           "category":5,
           "rating":4.7,
-          "image":"media/sgtaba8x20032gbwf-1.jpg"
+          "image":"sgtaba8x20032gbwf-1.jpg"
        }
     },
     {
@@ -204,7 +204,7 @@
           "price":169.00,
           "category":5,
           "rating":4.8,
-          "image":"media/sgtaba9x11064gbwf-1.jpg"
+          "image":"sgtaba9x11064gbwf-1.jpg"
        }
     },
     {
@@ -217,7 +217,7 @@
           "price":849.00,
           "category":6,
           "rating":4.6,
-          "image":"media/sg235g256gb8gbds-1.jpg"
+          "image":"sg235g256gb8gbds-1.jpg"
        }
     },
     {
@@ -230,7 +230,7 @@
           "price":949.00,
           "category":6,
           "rating":4.9,
-          "image":"media/sg22ul5g256gb12gb-1.jpg"
+          "image":"sg22ul5g256gb12gb-1.jpg"
        }
     },
     {
@@ -243,7 +243,7 @@
           "price":1099.00,
           "category":6,
           "rating":4.8,
-          "image":"media/sgzf5g512gb12gbds-1.jpg"
+          "image":"sgzf5g512gb12gbds-1.jpg"
        }
     },
     {
@@ -256,7 +256,7 @@
           "price":1149.00,
           "category":6,
           "rating":4.9,
-          "image":"media/sg23ul5g256gb8gbds-1.jpg"
+          "image":"sg23ul5g256gb8gbds-1.jpg"
        }
     },
     {
@@ -269,7 +269,7 @@
           "price":1199.00,
           "category":6,
           "rating":4.8,
-          "image":"media/sg23ul5g512gb12gbds-1.jpg"
+          "image":"sg23ul5g512gb12gbds-1.jpg"
        }
     },
     {
@@ -282,7 +282,7 @@
           "price":20.00,
           "category":7,
           "rating":4.6,
-          "image":"media/usbtpyecpa-1.jpg"
+          "image":"usbtpyecpa-1.jpg"
        }
     },
     {
@@ -295,7 +295,7 @@
           "price":19.00,
           "category":8,
           "rating":4.5,
-          "image":"media/h6931474781338-1.jpg"
+          "image":"h6931474781338-1.jpg"
        }
     },
     {
@@ -308,7 +308,7 @@
           "price":15.00,
           "category":9,
           "rating":4.5,
-          "image":"media/bltripl01blk-1.jpg"
+          "image":"bltripl01blk-1.jpg"
        }
     }
 ]
