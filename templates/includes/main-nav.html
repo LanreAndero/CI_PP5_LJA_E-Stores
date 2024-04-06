@@ -17,10 +17,10 @@
                 Apple
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="apple-link">
-                <a href="" class="dropdown-item">Airpods</a>
-                <a href="" class="dropdown-item">iPad</a>
-                <a href="" class="dropdown-item">iPhone</a>
-                <a href="" class="dropdown-item">All Apple</a>
+                <a href="{% url 'products' %}?category=airpods" class="dropdown-item">Airpods</a>
+                <a href="{% url 'products' %}?category=ipad" class="dropdown-item">iPad</a>
+                <a href="{% url 'products' %}?category=iphone" class="dropdown-item">iPhone</a>
+                <a href="{% url 'products' %}?category=airpods,ipad,iphone" class="dropdown-item">All Apple</a>
             </div>
         </li>
 
@@ -29,10 +29,10 @@
                 Samsung
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="samsung-link">
-                <a href="" class="dropdown-item">Galaxy Buds</a>
-                <a href="" class="dropdown-item">Galaxy Tab</a>
-                <a href="" class="dropdown-item">Galaxy Phone</a>
-                <a href="" class="dropdown-item">All Samsung</a>
+                <a href="{% url 'products' %}?category=galaxy_buds" class="dropdown-item">Galaxy Buds</a>
+                <a href="{% url 'products' %}?category=galaxy_tab" class="dropdown-item">Galaxy Tab</a>
+                <a href="{% url 'products' %}?category=galaxy_phone" class="dropdown-item">Galaxy Phone</a>
+                <a href="{% url 'products' %}?category=galaxy_buds,galaxy_tab,galaxy_phone" class="dropdown-item">All Samsung</a>
             </div>
         </li>
 
@@ -40,11 +40,11 @@
             <a class="logo-font font-weight-bold nav-link text-black" href="#" id="accessories-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Accessories
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">Power Adapter</a>
-                <a href="" class="dropdown-item">Selfie Stick</a>
-                <a href="" class="dropdown-item">Power Bank</a>
-                <a href="" class="dropdown-item">All Accessories</a>
+            <div class="dropdown-menu border-0" aria-labelledby="accessories-link">
+                <a href="{% url 'products' %}?category=power_adapter" class="dropdown-item">Power Adapter</a>
+                <a href="{% url 'products' %}?category=power_bank" class="dropdown-item">Power Bank</a>
+                <a href="{% url 'products' %}?category=selfie_stick" class="dropdown-item">Selfie Stick</a>
+                <a href="{% url 'products' %}?category=power_adapter,power_bank,selfie_stick" class="dropdown-item">All Accessories</a>
             </div>
         </li>
     </ul>

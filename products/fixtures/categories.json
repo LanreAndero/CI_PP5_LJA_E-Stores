@@ -51,14 +51,14 @@
     "pk": 8, 
     "model": "products.category", 
     "fields": {
-        "name": "selfie_stick", 
-        "friendly_name": "Selfie Stick"
+        "name": "power_bank", 
+        "friendly_name": "Power Bank"
     }
 }, {
     "pk": 9, 
     "model": "products.category", 
     "fields": {
-        "name": "power_bank", 
-        "friendly_name": "Power Bank"
-    }
+        "name": "selfie_stick", 
+        "friendly_name": "Selfie Stick"
+    }    
 }]
