@@ -6,6 +6,7 @@ from .forms import OrderForm
 from .models import Order, OrderLineItem
 from products.models import Product
 from bag.contexts import bag_contents
+from django.http import JsonResponse
 
 import stripe
 
@@ -104,3 +105,11 @@ def checkout_success(request, order_number):
     }
 
     return render(request, template, context)
+
+
+def cache_checkout_data(request):
+    if request.method == 'POST':
+        # Process and cache checkout data here
+        return JsonResponse({'success': True})
+    else:
+        return JsonResponse({'success': False}, status=400)

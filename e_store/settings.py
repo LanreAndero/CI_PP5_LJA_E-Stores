@@ -86,6 +86,12 @@ ROOT_URLCONF = 'e_store.urls'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
+CSRF_COOKIE_SECURE = True
+CSRF_COOKIE_SAMESITE = 'None'
+
+SESSION_COOKIE_SECURE = True
+SESSION_COOKIE_SAMESITE = 'None'
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
