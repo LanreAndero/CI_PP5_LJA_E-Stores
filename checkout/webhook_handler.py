@@ -132,6 +132,7 @@ class StripeWH_Handler:
             except Exception as e:
                 if order:
                     order.delete()
+                logger.error(f"Error handling payment intent succeeded: {e}")
                 return HttpResponse(
                     content=f'Webhook received: {event["type"]} | ERROR: {e}',
                     status=500)
