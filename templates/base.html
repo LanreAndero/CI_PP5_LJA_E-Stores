@@ -14,13 +14,15 @@
     {% endblock %}
 
     {% block corecss %}
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" 
+            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap">
         <link rel="stylesheet" href="{% static 'css/base.css' %}">
         <link rel="apple-touch-icon" sizes="180x180" href="{% static 'img/apple-touch-icon.png' %}">
         <link rel="icon" type="image/png" sizes="32x32" href="{% static 'img/favicon-32x32.png' %}">
         <link rel="icon" type="image/png" sizes="16x16" href="{% static 'img/favicon-16x16.png' %}">
         <link rel="manifest" href="{% static 'img/site.webmanifest' %}">
+        <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
     {% endblock %}
 
     {% block extra_css %}
@@ -28,9 +30,12 @@
 
     {% block corejs %}    
         <script src="https://kit.fontawesome.com/259bfbae79.js" crossorigin="anonymous"></script>
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" 
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" 
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" 
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
         <!-- Stripe -->
         <script src="https://js.stripe.com/v3/"></script>
     {% endblock %}
@@ -141,11 +146,145 @@
     {% block content %}
     {% endblock %}
 
+    <!-- Footer taken from MDBootstrap.com -->
+    <footer class="text-center text-lg-start bg-white text-muted mt-5">
+        <!-- Section: Mailchimp Signup Form -->
+        <div class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <div id="mc_embed_signup">
+                <form 
+                    action="https://gmail.us22.list-manage.com/subscribe/post?u=93104eeb24724670b020a4cfe&amp;id=391633e064&amp;f_id=0059c1e1f0" 
+                    method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                    <div id="mc_embed_signup_scroll">
+                        <div class="mc-field-group">
+                            <label for="mce-EMAIL">Subscribe to our Mailing List</label>
+                            <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL"
+                              placeholder="Email address" required>
+                            <span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span>
+                        </div>
+                        <div id="mce-responses" class="clear foot">
+                            <div class="response" id="mce-error-response" style="display:none"></div>
+                            <div class="response" id="mce-success-response" style="display:none"></div>
+                        </div>
+                        <div id="mce-responses" class="clear foot">
+                            <div class="response" id="mce-error-response" style="display:none"></div>
+                            <div class="response" id="mce-success-response" style="display:none"></div>
+                        </div>  
+                        <div aria-hidden="true" style="position: absolute; left: -5000px;">
+                            /* real people should not fill this in and expect good things - do not remove this or risk form bot signups */
+                            <input type="text" name="b_93104eeb24724670b020a4cfe_391633e064" tabindex="-1" value="" aria-label="Search">
+                        </div>
+                        <div class="optionalParent">
+                            <div class="clear foot">
+                                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="custom-button mx-auto">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- Section: Links  -->
+        <section>
+          <div class="container text-center text-md-start mt-5">
+            <div class="row mt-3">
+              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <!-- Information: Name/Educational Notice -->
+                <a href="{% url 'home' %}"><h2 class="text-uppercase custom-heading custom-heading fw-bold mb-4 text-success">LJA E-Store</h2></a>
+                <p>This site is created for educational purposes only.</p>
+                <!-- Socials -->
+                <p>
+                    <a class="text-reset text-decoration-none fs-3 me-1" href="https://www.instagram.com" rel="noopener noreferrer nofollow" target="_blank"><i class="fa-brands fa-instagram fa-xl text-success"></i><span class="sr-only">Instagram</span></a>
+                    <a class="text-reset text-decoration-none fs-3 me-1" href="https://www.facebook.com" rel="noopener noreferrer nofollow" target="_blank"><i class="fab fa-facebook-f fa-xl text-success"></i><span class="sr-only">Facebook</span></a>
+                </p>
+              </div>
+              <!-- Links -->
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <h2 class="text-uppercase custom-heading fw-bold mb-4 text-success">
+                  Services
+                </h2>
+                <p>
+                    <a href="{% url 'products' %}" class="text-reset">Shop</a>
+                </p>
+                <p>
+                    {% if request.user.is_authenticated %}
+                    <a href="{% url 'profile' %}" class="text-reset">Orders</a>
+                    {% else %}
+                    <a href="{% url 'account_login' %}" class="text-reset">Orders</a>
+                    {% endif %}
+                </p>
+              </div>
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <h2 class="text-uppercase custom-heading fw-bold mb-4 text-success">
+                  Useful links
+                </h2>
+                <p>
+                  <a href="" class="text-reset">Contact Us</a>
+                </p>
+                <p>
+                  <a href="https://www.freeprivacypolicy.com/live/4f4c3f0e-1369-4160-8703-95b2aca90d2d"
+                    rel="noopener noreferrer nofollow" target="_blank" class="text-reset">Privacy Policy</a>
+                </p>
+              </div>
+    
+              <!-- Contact -->
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <h2 class="text-uppercase custom-heading fw-bold mb-4 text-success">Contact</h2>
+                <p><i class="fas fa-home me-3 text-secondary"></i> LJA E-Store, Dundalk, Ireland</p>
+                <p>
+                  <i class="fas fa-envelope me-3 text-secondary"></i>
+                  lanreandero@gmail.com
+                </p>
+                <p><i class="fas fa-phone me-3 text-secondary"></i> + 353 899 737 077</p>
+                <p><i class="fas fa-print me-3 text-secondary"></i> + 353 899 737 077</p>
+              </div>
+            </div>
+          </div>
+        </section>
+    
+        <!-- Copyright -->
+        <div class="text-center p-4 text-success" style="background-color: rgba(0, 0, 0, 0.025);">
+          © 2024 Copyright:
+          <a class="text-reset fw-bold" href="{% url 'home' %}">LJA E-Store</a>
+        </div>
+    
+      </footer>
+    
+
     {% block postloadjs %}
+
+    <!-- Back to Top -->
+    <script>
+        $('.back-to-top').click(function (e) {
+        window.scrollTo(0, 0)
+        })
+    </script>
+
     <script type="text/javascript">
         $('.toast').toast('show');
-    </script>    
-    {% endblock %}
+    </script>
     
+    <!-- Maichimp Scripts -->
+    <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+    <script type="text/javascript">
+        (function($) {
+            window.fnames = new Array(); 
+            window.ftypes = new Array();
+            fnames[0]='EMAIL';
+            ftypes[0]='email';
+            fnames[1]='FNAME';
+            ftypes[1]='text';
+            fnames[2]='LNAME';
+            ftypes[2]='text';
+            fnames[3]='ADDRESS';
+            ftypes[3]='address';
+            fnames[4]='PHONE';
+            ftypes[4]='phone';
+            fnames[5]='BIRTHDAY';
+            ftypes[5]='birthday';
+        }(jQuery));
+        var $mcj = jQuery.noConflict(true);
+    </script>
+
+    {% endblock %}
+        
   </body>
 </html>
