@@ -50,10 +50,14 @@ INSTALLED_APPS = [
     'products',
     'bag',
     'checkout',
-    'profiles',
-
-    # Other
     'crispy_forms',
+    'django_countries',
+    'django_summernote',
+    'phonenumber_field',
+    'daterangefilter',
+    'rangefilter',
+    'profiles',
+    'contact',
 ]
 
 MIDDLEWARE = [
