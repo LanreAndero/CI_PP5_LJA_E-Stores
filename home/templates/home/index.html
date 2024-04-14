@@ -10,19 +10,32 @@
 {% endblock %}
 
 {% block content %}
-    <div class="container h-100">
-        <div class="row h-100">
-            <div class="col-7 col-md-6 my-auto">
-                <h1 class="display-4 logo-font text-black">
-                    The new collections are here
-                </h1>
-                <div class="my-5">
-                    <h4>
-                        <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Shop Now</a>
-                    </h4>
-                </div>
+<div class="container text-white">
+    <!-- Welcome message -->
+    <div class="row mt-5">
+        <div class="col-md-8 offset-md-2 text-center">
+            <h1 class="mb-4">Welcome to LJA E-Store</h1>
+            <p class="mb-4"><h2>We specialize in mobile phones and accessories sales</h2></p>
+            <div class="my-5">
+                <a href="{% url 'products' %}" class="shop-now-button btn btn-lg btn-primary rounded-pill text-uppercase py-3 px-5">Shop Now</a>
             </div>
         </div>
     </div>
+
+    <!-- Contact Information -->
+    <div class="row mt-5">
+        <div class="col">
+            <h2 class="text-center">Contact Information</h2>
+            <p class="text-center">Feel free to contact us for any inquiries or assistance</p>
+            <ul class="list-unstyled text-center">
+                <li>87 College Manor,</li>
+                <li>Dundalk, Co. Louth</li>
+                <li>Email: ljaestorepp5@gmail.com</li>
+                <li>Phone: +353 (0)899 737 077</li>
+            </ul>
+        </div>
+    </div>
+
+</div>
     
 {% endblock %}
