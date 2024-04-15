@@ -20,15 +20,18 @@ from django.conf import settings
 from django.conf.urls.static import static
 from products.sitemaps import StaticViewsSitemap
 from django.contrib.sitemaps.views import sitemap
+from about.views import about_us
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('accounts/', include('allauth.urls'), name='accounts'),
+    path('accounts/', include('allauth.urls')),
     path('', include('home.urls')),
     path('', include('contact.urls')),
     path('products/', include('products.urls')),
     path('bag/', include('bag.urls')),
     path('checkout/', include('checkout.urls')),
     path('profile/', include('profiles.urls')),
+    path('about/', about_us, name='about'),
     path('sitemap.xml', sitemap, {'sitemaps': {'static': StaticViewsSitemap}}),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

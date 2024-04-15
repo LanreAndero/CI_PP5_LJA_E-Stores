@@ -10,6 +10,7 @@ class StaticViewsSitemap(sitemaps.Sitemap):
         # Replace these with the names of your URL patterns
         return [
             'home',
+            'about',
             'contact',
             'view_bag',
             'checkout',

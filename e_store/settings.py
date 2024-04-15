@@ -59,6 +59,7 @@ INSTALLED_APPS = [
     'rangefilter',
     'profiles',
     'contact',
+    'about',
 ]
 
 MIDDLEWARE = [

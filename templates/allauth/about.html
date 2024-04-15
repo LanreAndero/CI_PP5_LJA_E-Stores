@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container" style="margin-top: 200px;">
+    <div class="row my-5">
+        <div class="col bg-light rounded">
+            <a class="text-success text-decoration-none" href="{% url 'about' %}">
+                <h1 class="my-5">
+                    About Us
+                </h1>
+            </a>
+        </div>
+    </div>
+
+    <div class="row bg-light my-5 p-3 rounded">
+        <div class="col">
+            <div class="row d-flex my-5 justify-content-center bg-light rounded">
+                <div class="container text-center">
+                    <p class="large-text heavy-text">Welcome to LJA E-Store! We are passionate about providing you with the best selection of mobile phones and accessories. Our mission is to make your online shopping experience convenient, enjoyable, and secure.</p>
+                    <p class="large-text heavy-text">At LJA E-Store, we strive to offer competitive prices, prompt shipping, and excellent customer service. Whether you're looking for the latest smartphone model, protective cases, chargers, or other accessories, we've got you covered.</p>
+                    <p class="large-text heavy-text">Thank you for choosing LJA E-Store for all your mobile phone and accessory needs. We look forward to serving you!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="about-my-5">
+        <a href="{% url 'products' %}" class="shop-now-button btn btn-lg btn-primary rounded-pill text-uppercase py-3 px-5">Shop Now</a>
+    </div>    
+</div>
+{% endblock %}

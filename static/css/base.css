@@ -76,6 +76,19 @@ body {
     color: white;
 }
 
+.about-my-5 {
+    text-align: center;
+    padding: 20px;
+}
+
+.large-text {
+    font-size: 18px;
+}
+
+.heavy-text {
+    font-weight: bold;
+}
+
 .text-black {
     color: #db1616 !important;
 }
