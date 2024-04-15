@@ -61,6 +61,21 @@ body {
     color: white;
 }
 
+.btn-view {
+    background-color: transparent;
+    color: green;
+    border: 2px solid green;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-view:hover {
+    background-color: green;
+    color: white;
+}
+
 .text-black {
     color: #db1616 !important;
 }
