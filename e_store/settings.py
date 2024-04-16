@@ -12,30 +12,33 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 import os
 import dj_database_url
-from pathlib import Path
 if os.path.isfile("env.py"):
     import env
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 # BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-=j-p)%+v=guw6jd4#yjy122ufkc5n3qfb5^*=%_p21+@tj9^xl'
+SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+development = os.environ.get('DEVELOPMENT', False)
 
-ALLOWED_HOSTS = [
-    'lja-e-store-4db41a996813.herokuapp.com',
-    '8000-lanreandero-cipp5ljaest-aik18mdy42h.ws-eu110.gitpod.io',
-    'localhost'
-]
+DEBUG = development
 
+if development:
+    ALLOWED_HOSTS = [
+        '8000-lanreandero-cipp5ljaest-aik18mdy42h.ws-eu110.gitpod.io',
+        '127.0.0.1:8000',
+    ]
+
+else:
+    ALLOWED_HOSTS = ['lja-e-store-4db41a996813.herokuapp.com', '*']
 
 # Application definition
 
