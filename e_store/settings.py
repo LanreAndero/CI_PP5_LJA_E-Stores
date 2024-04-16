@@ -38,7 +38,7 @@ if development:
     ]
 
 else:
-    ALLOWED_HOSTS = ['lja-e-store-4db41a996813.herokuapp.com', '*']
+    ALLOWED_HOSTS = ['lja-estore-b0397d447086.herokuapp.com', '*']
 
 # Application definition
 
