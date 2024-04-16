@@ -27,10 +27,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# development = os.environ.get('DEVELOPMENT', False)
+development = os.environ.get('DEVELOPMENT', False)
 
-# DEBUG = development
-DEBUG = 'DEVELOPMENT' in os.environ
+DEBUG = development
 
 if development:
     ALLOWED_HOSTS = [
@@ -40,6 +39,7 @@ if development:
 
 else:
     ALLOWED_HOSTS = ['lja-estore-b0397d447086.herokuapp.com', '*']
+
 
 # Application definition
 
