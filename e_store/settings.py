@@ -34,9 +34,8 @@ DEBUG = development
 if development:
     ALLOWED_HOSTS = [
         '8000-lanreandero-cipp5ljaest-aik18mdy42h.ws-eu110.gitpod.io',
-        '.ws-eu110.gitpod.io',
         '127.0.0.1:8000',
-        ]
+    ]
 
 else:
     ALLOWED_HOSTS = ['lja-e-store-4db41a996813.herokuapp.com', '*']
@@ -56,7 +55,6 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
-    'store',
     'home',
     'products',
     'bag',
