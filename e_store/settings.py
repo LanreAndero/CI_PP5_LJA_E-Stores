@@ -33,7 +33,7 @@ DEBUG = development
 
 if development:
     ALLOWED_HOSTS = [
-        '8000-lanreandero-cipp5ljaest-aik18mdy42h.ws-eu110.gitpod.io',
+        '8000-debug-lanreandero-cipp5ljaest-aik18mdy42h.ws-eu110.gitpod.io',
         '127.0.0.1:8000',
         'lja-estore-b0397d447086.herokuapp.com'
     ]
@@ -41,7 +41,7 @@ if development:
 else:
     ALLOWED_HOSTS = [
         'lja-estore-b0397d447086.herokuapp.com',
-        '*', 'lja-estore-b0397d447086.herokuapp.com'
+        '*', 'lja-estore-b0397d447086.herokuapp.com',
     ]
 
 
