@@ -1,3 +1,3 @@
 User-agent: *
 Disallow: /admin/
-Sitemap: https://lja-e-store-4db41a996813.herokuapp.com//sitemap.xml
+Sitemap: https://lja-estore-b0397d447086.herokuapp.com//sitemap.xml
