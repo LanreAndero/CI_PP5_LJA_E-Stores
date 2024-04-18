@@ -39,7 +39,10 @@ if development:
     ]
 
 else:
-    ALLOWED_HOSTS = ['lja-estore-b0397d447086.herokuapp.com', '*','lja-estore-b0397d447086.herokuapp.com']
+    ALLOWED_HOSTS = [
+        'lja-estore-b0397d447086.herokuapp.com',
+        '*', 'lja-estore-b0397d447086.herokuapp.com'
+    ]
 
 
 # Application definition
@@ -101,11 +104,6 @@ ROOT_URLCONF = 'e_store.urls'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
-# CSRF_COOKIE_SECURE = True
-# CSRF_COOKIE_SAMESITE = 'None'
-
-# SESSION_COOKIE_SECURE = True
-# SESSION_COOKIE_SAMESITE = 'None'
 
 TEMPLATES = [
     {
@@ -151,11 +149,6 @@ else:
             'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
         }
     }
-
-# DATABASES = {
-#     'default': dj_database_url.parse('postgres://immyaffz:l8YcKjw3tcpuB8hzBtj3PY3c_qrZFTNG@kandula.db.elephantsql.com/immyaffz')
-# }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
