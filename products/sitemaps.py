@@ -1,5 +1,6 @@
 from django.contrib import sitemaps
 from django.urls import reverse
+from datetime import datetime
 
 
 class StaticViewsSitemap(sitemaps.Sitemap):
@@ -7,7 +8,6 @@ class StaticViewsSitemap(sitemaps.Sitemap):
     priority = 0.5
 
     def items(self):
-        # Replace these with the names of your URL patterns
         return [
             'home',
             'about',
@@ -18,6 +18,9 @@ class StaticViewsSitemap(sitemaps.Sitemap):
             'products',
             'profile',
         ]
+
+    def lastmod(self, obj):
+        return datetime.now()
 
     def location(self, item):
         return reverse(item)

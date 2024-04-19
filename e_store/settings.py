@@ -17,6 +17,7 @@ if os.path.isfile("env.py"):
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 # BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
@@ -24,7 +25,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('SECRET_KEY', '')
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 development = os.environ.get('DEVELOPMENT', False)
@@ -33,15 +34,15 @@ DEBUG = development
 
 if development:
     ALLOWED_HOSTS = [
-        '8000-debug-lanreandero-cipp5ljaest-aik18mdy42h.ws-eu110.gitpod.io',
+        '8000-lanreandero-cipp5ljaest-aik18mdy42h.ws-eu110.gitpod.io',
         '127.0.0.1:8000',
-        'lja-estore-b0397d447086.herokuapp.com'
+        'localhost', '127.0.0.1'
     ]
 
 else:
     ALLOWED_HOSTS = [
         'lja-estore-b0397d447086.herokuapp.com',
-        '*', 'lja-estore-b0397d447086.herokuapp.com',
+        '8000-lanreandero-cipp5ljaest-aik18mdy42h.ws-eu110.gitpod.io'
     ]
 
 
@@ -91,6 +92,8 @@ AUTHENTICATION_BACKENDS = [
 ]
 
 SITE_ID = 1
+
+SITE_URL = 'https://lja-estore-b0397d447086.herokuapp.com/'
 
 ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
 ACCOUNT_EMAIL_REQUIRED = True
@@ -187,10 +190,13 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),
+]
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
 
 if 'USE_AWS' in os.environ:
     # Cache control
@@ -215,6 +221,7 @@ if 'USE_AWS' in os.environ:
     # Override static and media URLs in production
     STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
     MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
+
 
 # Stripe
 FREE_DELIVERY_THRESHOLD = 50
