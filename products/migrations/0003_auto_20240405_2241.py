@@ -22,6 +22,6 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='product',
             name='stock',
-            field=models.IntegerField(default=0, validators=[django.core.validators.MinValueValidator(0)]),
+            field=models.IntegerField(default=0, validators=[django.core.validators.MinValueValidator(0)]), # noqa
         ),
     ]

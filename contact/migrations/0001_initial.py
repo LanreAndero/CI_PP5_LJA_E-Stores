@@ -18,13 +18,17 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Contact',
             fields=[
-                ('message_id', models.AutoField(primary_key=True, serialize=False)),
+                ('message_id', models.AutoField(primary_key=True,
+                 serialize=False)),
                 ('created_date', models.DateTimeField(auto_now_add=True)),
                 ('name', models.CharField(max_length=50, null=True)),
                 ('email', models.EmailField(default='', max_length=254)),
-                ('phone', phonenumber_field.modelfields.PhoneNumberField(max_length=128, null=True, region=None)),
+                ('phone', phonenumber_field.modelfields.PhoneNumberField(
+                    max_length=128, null=True, region=None)),
                 ('message', models.TextField()),
-                ('user', models.ForeignKey(null=True, on_delete=django.db.models.deletion.CASCADE, related_name='contact_user', to=settings.AUTH_USER_MODEL)),
+                ('user', models.ForeignKey(null=True,
+                 on_delete=django.db.models.deletion.CASCADE,
+                 related_name='contact_user', to=settings.AUTH_USER_MODEL)),
             ],
             options={
                 'ordering': ['created_date'],
