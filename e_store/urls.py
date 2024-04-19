@@ -22,6 +22,8 @@ from products.sitemaps import StaticViewsSitemap
 from django.contrib.sitemaps.views import sitemap
 from about.views import about_us
 
+from .views import handler404
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -35,3 +37,4 @@ urlpatterns = [
     path('about/', about_us, name='about'),
     path('sitemap.xml', sitemap, {'sitemaps': {'static': StaticViewsSitemap}}),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+handler404 = 'e_store.views.handler404'
