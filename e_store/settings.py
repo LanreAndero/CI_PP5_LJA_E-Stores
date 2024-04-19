@@ -42,7 +42,7 @@ if development:
 else:
     ALLOWED_HOSTS = [
         'lja-estore-b0397d447086.herokuapp.com',
-        '8000-lanreandero-cipp5ljaest-aik18mdy42h.ws-eu110.gitpod.io'
+        '*', 'lja-estore-b0397d447086.herokuapp.com'
     ]
 
 
