@@ -20,7 +20,10 @@ from django.conf import settings
 from django.conf.urls.static import static
 from about.views import about_us
 
-from .views import handler404
+# from .views import handler404
+from .views import error_404_view
+
+handler404 = error_404_view
 
 
 urlpatterns = [
@@ -33,7 +36,5 @@ urlpatterns = [
     path('checkout/', include('checkout.urls')),
     path('profile/', include('profiles.urls')),
     path('about/', about_us, name='about'),
-
-
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-handler404 = 'e_store.views.handler404'
+# handler404 = 'e_store.views.handler404'
