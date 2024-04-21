@@ -18,8 +18,6 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
-from products.sitemaps import StaticViewsSitemap
-from django.contrib.sitemaps.views import sitemap
 from about.views import about_us
 
 from .views import handler404
@@ -35,6 +33,7 @@ urlpatterns = [
     path('checkout/', include('checkout.urls')),
     path('profile/', include('profiles.urls')),
     path('about/', about_us, name='about'),
-    path('sitemap.xml', sitemap, {'sitemaps': {'static': StaticViewsSitemap}}),
+
+
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-handler404 = 'e_store.views.handler404' # noqa
+handler404 = 'e_store.views.handler404'
