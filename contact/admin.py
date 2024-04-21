@@ -13,14 +13,15 @@ class ContactAdmin(admin.ModelAdmin):
         'email',
         'phone',
         'created_date'
-        )
+    )
     list_display = (
         'message_id',
         'user',
         'name',
         'message',
         'phone',
-        'created_date')
+        'created_date'
+    )
 
     search_fields = ['name']
     list_filter = (('created_date', DateRangeFilter),)
