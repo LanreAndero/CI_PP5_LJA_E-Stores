@@ -21,8 +21,8 @@ def add_to_bag(request, item_id):
         if item_id in bag:
             bag[item_id] += quantity
             messages.success(
-                request, f'Updated {product.name} quantity to\
-                {bag[item_id]} in your bag')
+                request, f'Updated {product.name} quantity to '
+                         f'{bag[item_id]} in your bag')
         else:
             bag[item_id] = quantity
             messages.success(request, f'Added {product.name} to your bag')
@@ -38,7 +38,7 @@ def adjust_bag(request, item_id):
     Adjust the quantity of the specified product in the shopping bag
     """
     if request.method == 'POST':
-        product = get_object_or_404(Product, pk=item_id) # noqa
+        product = get_object_or_404(Product, pk=item_id)
         quantity = int(request.POST.get('quantity'))
         bag = request.session.get('bag', {})
 
@@ -60,7 +60,7 @@ def remove_from_bag(request, item_id):
     Remove the specified product from the shopping bag
     """
     if request.method == 'POST':
-        product = get_object_or_404(Product, pk=item_id) # noqa
+        product = get_object_or_404(Product, pk=item_id)
         bag = request.session.get('bag', {})
 
         if item_id in bag:
