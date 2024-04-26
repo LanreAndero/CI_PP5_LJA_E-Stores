@@ -30,7 +30,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 development = os.environ.get('DEVELOPMENT', False)
 
-DEBUG = False
+DEBUG = development
 
 if development:
     ALLOWED_HOSTS = [
@@ -234,7 +234,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 if 'DEVELOPMENT_EMAIL' in os.environ:
     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-    DEFAULT_FROM_EMAIL = 'ljaestore@gexample.com'
+    DEFAULT_FROM_EMAIL = 'ljaestorepp5@gmail.com'
 else:
     EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
     EMAIL_USE_TLS = True
